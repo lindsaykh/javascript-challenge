@@ -9,13 +9,13 @@
   <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
   <link rel="stylesheet" href="static/css/style.css">
 </head>
-<!--body references images in static folder-->
 <body>
   <div class="wrapper">
     <nav class="navbar navbar-default">
       <div class="container-fluid">
         <div class="navbar-header">
           <a class="navbar-brand" href="index.html">UFO Sightings
+            <!--body references images in static folder-->
             <img class="nav-ufo" src="static/images/ufo.svg">
           </a>
         </div>
@@ -36,12 +36,13 @@
                   <div class="form-group">
                     <ul class="list-group" id="filters">
                       <li class="filter list-group-item">
-                        <label for="date">Enter a Date</label>
-                        <input class="form-control" id="datetime" type="text" placeholder="1/11/2011">
+                        <label for="date">Enter a Date (1/1/2010 to 1/13/2010)</label>
+                        <input class="form-control" id="datetime" type="text" placeholder="1/1/2010">
                       </li>
                     </ul>
                   </div>
-                  <button id="filter-btn" type="button" class="btn btn-default">Filter Table</button>
+                  <!--the filter button is referenced in js file; click event-->
+                  <button id="filter-btn" type="button" class="btn btn-default">Click Here to Filter!</button>
                 </form>
               </div>
             </div>
